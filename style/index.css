@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 #headadd{
     height: 40px;
@@ -29,7 +30,7 @@
 #navbar{
      height: 157.5px;
     width: 100%;
-    background-color: rgb(48, 81, 110);
+    
 
 }
 #navhead{
@@ -40,7 +41,7 @@
 #navbody{
     height: 65.5px;
     width: 100%;
-    background-color: aliceblue;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +49,7 @@
 #navbody>div{
     height: 100%;
     width: 33.33%;
-    border: 1px solid red;
+    
 }
 #mainlogo{
     display: flex;
@@ -60,8 +61,301 @@
     height: auto;
 
 }
+
+#acsec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#searchbox{
+    height: 20px;
+    width: 290px;
+    padding: 5px;
+}
+#sebtn{
+    height: 30px;
+    width: 30px;
+    margin-left: -45px;
+    border: 0;
+    background-color: #ffffff;
+}
+.acicon{
+    height: 30px;
+    width: 30px;
+   
+    color: #066599;
+    font-size: 22px;
+    font-weight: bolder;
+    border: 0;
+    background-color: #ffffff;
+}
 #navbotm{
     height: 52px;
     width: 100%;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#producticonbox{
+    height: 40px;
+    width: 90%;
+    background-color:  #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+#producticonbox>button{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    border: 0;
+    background-color:  #ffffff;
+}
+#producticonbox>button:hover{
+    border-bottom: 3px solid  #066599;
+}
+#producticonbox>button>a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+/*body of home page stast heare*/
+.addimages{
+    width: 78%;
+    height: auto;
+
+    margin: auto;
+    margin-top: 25px;
+}
+.addimages>img{
+    width: 100%;
+    height: auto;
+}
+#ofersection{
+    height: 378px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242 242 242);
+    gap: 20px;
+}
+#ofersection>div{
+    height: 266px;
+    width: 230px;
+    
+    
+background-color: #ffffff;
+   
+   
+  
+}
+.ofertext{
+  height: 164px;
+  width: 144px;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+  
+}
+
+.spopbtn{
+    height: 48px;
+    width: 144px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(23, 23, 23);
+    color: #ffffff;
+    font-weight:bolder;
+}
+.ofbol{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.ofpr{
+    font-size: 14px;
+}
+.ofon{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #066599;
+}
+#diffprods{
+    height: 248px;
+    width:75% ;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+#diffprods>h2{
+    width: 100%;
+    height: 32px;
+    text-align: center;
+
+}
+#diffprods>div{
+    height: 216px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+
+
+}
+#diffprods>div>div{
+    height: 100%;
+    width: 168px;
+   
+    text-align: center;
+}
+#diffprods>div>div>img{
+    width: 100%;
+    height: auto;
+
+}
+#diffprods>div>div>a{
+    color: black;
+    font-weight: bolder;
+}
+#socol{
+    height: 160px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+#socoln{
+    height: 100%;
+    width: 500px;
+    margin: auto;
+
+
+}
+#socolnhead{
+    height:110px;
+    width: 100%;
+    text-align: center;
+}
+#socolbtn{
+    height: 48px;
+    width: 244px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#6666;
+    color: black;
+    font-weight: bolder;
+
+}
+#adu{
+    height: 426px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+#adu>div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+#aduimg>img{
+    width: 100%;
+    height: 100%;
+}
+#ineraddsection>div{
+    height: 100%;
+    width: 50%; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ineraddsection>div>div{
+    height: 343px;
+    width: 268px;
+    
+}
+.inpp{
+    height: 268px;
+    width: 100%;
+    
+    text-align: center;
+}
+.inpp>img{
+    width: auto;
+    height: 160px;
+}
+.inll{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.inll>p{
+    font-size: 12px;
+    font-weight: bolder;
+    width: 80%;
+    color: red;
+}
+.inkk{
+    height: 42px;
+    width: 100%;
+    margin-top: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   color: #ffffff;
+   font-size: 16px;
+   font-weight: bold;
+}
+.inpp_header{
+    font-size: 14px;
+    font-weight: bold;
+    color: #066599;
+}
+.inpp_name{
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+.inpp_subname{
+    font-size: 12px;
+    color: rgba(49, 45, 45, 0.953);
+}
+.inpp_price{
+    font-size: 16px;
+    font-weight: bolder;
+}
+#dsimglinks{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #066599;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
+}
+#dsimglinks>div{
+    width: 568px;
+    height: 568px;
+    border: 1px solid red;
 }
