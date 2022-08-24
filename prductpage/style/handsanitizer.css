@@ -1,0 +1,17 @@
+#main2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,auto);
+    gap: 30px;
+    border: 1px solid black;
+    
+}
+#main2>div{
+    border: 1px solid red;
+    text-align: center;
+    padding: 30px;
+}
+#main2>div>img{
+    width: 80%;
+    height: 20%;
+   }
