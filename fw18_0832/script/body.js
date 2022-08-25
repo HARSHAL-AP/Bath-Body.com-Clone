@@ -1,3 +1,18 @@
+// filter checkboxes function
+
+var expanded= false;
+let showCheckbox= ()=>{
+    let checkboxes= document.getElementById('checkboxes');
+    if(!expanded){
+        checkboxes.style.display='block';
+        expanded=true;
+    }
+    else{
+        checkboxes.style.display='none';
+        expanded=false;
+    }
+}
+
 
 class products{
     constructor(i,b,n,t,p){
@@ -23,7 +38,7 @@ const body_products10= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7
 
 const body_products11= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf6be440b/crop/026490241_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','New Fragrance', 'Midnight Amber Glow', 'Shower Gel','$14.50');
 const body_products12= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw89f3e202/crop/026402400_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','New Fragrance', 'Lavender Sandalwood','Ultimate Hydration Body Cream', '$17.50');
-const body_products13= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw89f3e202/crop/026402400_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','New Fragrance', 'Pink Suede','Fine Fragrance Mist', '$16.50');
+const body_products13= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc98d8e3d/crop/026494123_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','New Fragrance', 'Pink Suede','Fine Fragrance Mist', '$16.50');
 const body_products14= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e20be00/crop/026501151_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','Online Exclusive','Crisp Morning Air', 'Shower Gel', '$13.50');
 const body_products15= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw384509fa/crop/026402407_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','New Fragrance', 'Cedarwood Ylang Ylang','Essential Oil Mist', '$15.50');
 const body_products16= new products('https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe6eb9376/crop/026495836_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_','New!', 'Sunrise Woods', 'Daily Nourishing Body Lotion', '$14.50');
@@ -61,10 +76,13 @@ let products_store=[]
     // console.log(products_store)
 localStorage.setItem('body_products', JSON.stringify(products_store))
 
+let data;
+ data= JSON.parse(localStorage.getItem('body_products'))
 
 
-let append= ()=>{
-    let data= JSON.parse(localStorage.getItem('body_products'))
+
+let append= (data)=>{
+   
     let body_pro= document.getElementById('body_pro');
     body_pro.innerHTML=null;
     data.forEach((el)=>{
@@ -81,6 +99,10 @@ let append= ()=>{
 
         image.src= el.image;
         badge.innerText= el.badge;
+        badge.style.color='#005699'
+        badge.style.fontSize='14px'
+        badge.style.fontWeight='Bold'
+        badge.style.fontStyle='Italic'
         name.innerText= el.name;
         type.innerText=el.type;
         price.innerText=el.price;
@@ -91,4 +113,20 @@ let append= ()=>{
 
     })
 }
-append();
+append(data);
+
+
+
+
+ // sorting function 
+
+ let sortlowtohigh=()=>{
+     data[0]
+   
+        data.sort(function(a,b){
+            return (a.price-b.price);
+        })
+    append(data)
+    console.log(data)
+
+}
