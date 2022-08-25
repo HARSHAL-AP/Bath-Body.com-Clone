@@ -133,28 +133,120 @@
   align-items: center;
   justify-content: space-around;
 }
-#producticonbox > button {
+
+/*navbar-popupsdata*/
+.triger{
   height: 40px;
   width: auto;
   padding: 10px;
   border: 0;
   background-color: #ffffff;
 }
-#producticonbox > button:hover {
+.triger:hover {
   border-bottom: 3px solid #066599;
 }
-#producticonbox > button > a {
+.triger:hover +.modal{
+  display: block;
+}
+.triger > a {
   text-decoration: none;
   color: black;
   font-size: 14px;
   font-weight: 100;
 }
+.modal{
+ display: none;
+  width: 100%;
+  height:auto;
+  position: absolute;
+  top: 190px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.bodymod{
+  height: 100%;
+  width: 80%;
+  margin: auto;
+ 
+  display: flex;
 
-/*navbar-popupsdata*/
+}
+.bodymod>div{
+  height: 100%;
+  width: 350px;
+  
+  display: flex;
+}
+.modamms{
+  height: 100%;
+  width: 50%;
+  
+  display: block;
+}
+.modamms>button{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 15px;
+  border: 0;
+  
+background-color: #ffffff;
+ font-size: 14px;
+ font-weight: bolder;
+}
+.modamms>button:hover{
+  border-left: 4px solid #066599;
+}
+.modamms>p{
+  font-size: 14px;
+  margin-top: 25px;
+}
 
+.modammss{
+  height: 100%;
+  width: 50%;
+  margin-left: 25px;
+  padding-left: 25px;
+  border-left: 1px solid black;
+  display: block;
+ 
+}
 
-
-
+#acount:hover +#acountdiv{
+  display: block;
+}
+#acountdiv{
+  display: none;
+  margin-left: 190px;
+  margin-top: 150px;
+  height: 150px;
+  width: 140px;
+  padding: 10px;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid black;
+  text-align: left;
+}
+#acountdiv>button{
+  height: 18px;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  background-color: #ffffff;
+  border: 0;
+}
+#acountdiv>button>a{
+  text-decoration: none;
+  color: #3a3c3d;
+}
+#acountdiv>p{
+margin-top: 3px;
+ font-size: 12px;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
 
 
 
