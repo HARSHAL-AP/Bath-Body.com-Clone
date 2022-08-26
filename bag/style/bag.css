@@ -1,0 +1,52 @@
+#bag_heading {
+  height: 40px;
+  width: 80%;
+
+  margin: auto;
+  margin-top: 50px;
+  border-bottom: 1px solid black;
+}
+#bag_heading > h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#bag_ad1 {
+  height: 312px;
+  width: 60%;
+  margin: auto;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  border: 1px solid rgba(200, 200, 200, 0.612);
+}
+#bag_ad1 > div {
+  height: 100%;
+  width: 200px;
+  text-align: center;
+}
+#bag_ad1 > div > img {
+  width: 137px;
+  height: 184px;
+}
+#bag_ad1 > div > h2 {
+  font-size: 16px;
+}
+#bag_ad1 > div > h4 {
+  font-size: 11px;
+}
+#bag_ad1 > div > a {
+  font-size: 11px;
+  text-decoration: none;
+  color: red;
+}
+#addghheding {
+  font-size: 14px;
+  text-align: center;
+
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+}

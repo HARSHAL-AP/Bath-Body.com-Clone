@@ -258,7 +258,12 @@ function displayProducts(productData){
 
         let price = document.createElement("h3");
         price.innerText ="$"+" "+element.price;
-        
+
+
+        let price = document.createElement("p");
+        price.innerText = element.price;
+     
+
 
         let addtocart = document.createElement("button");
         addtocart.innerText = "Add To Bag";
