@@ -313,10 +313,34 @@ let append = (data) => {
     price.innerText = el.price;
     add_button.innerText = "ADD TO BAG";
 
-    div.append(image, br, badge, name, type, price, br1, add_button);
-    body_pro.append(div);
-  });
-};
+
+        image.src= el.image;
+        image.onclick=()=>{
+            console.log(el)
+           localStorage.setItem('pro_detail',JSON.stringify(el))
+       window.location.href =  "./details.html"
+       }
+        name.onclick=()=>{
+            console.log(el)
+           localStorage.setItem('pro_detail',JSON.stringify(el))
+       window.location.href =  "./details.html"
+       }
+        badge.innerText= el.badge;
+        badge.setAttribute("class", "badge")
+    
+        name.innerText= el.name;
+        type.innerText=el.type;
+        price.innerText=el.price;
+        add_button.innerText="ADD TO BAG"
+
+        div.append(image,br,badge,name,type,price,br1,add_button)
+        body_pro.append(div)
+
+    })
+}
+
+   
+
 append(data);
 
 // sorting function
@@ -324,9 +348,24 @@ append(data);
 let sortlowtohigh = () => {
   data[0];
 
+
+
+ // sorting function 
+
+ let sortlowtohigh=()=>{
+   let data= JSON.parse(localStorage.getItem('body_products'))
+        data.sort(function(a,b){
+            return (a.price-b.price);
+        })
+    append(data)
+    console.log(data)
+
+}
+
   data.sort(function (a, b) {
     return a.price - b.price;
   });
   append(data);
   console.log(data);
 };
+

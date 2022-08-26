@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Product | Bath & Body Works</title>
+    <link rel="stylesheet" href="./style/product.css">
+</head>
+<body>
+   <div id="product_container">
+    <div id="up_product_box">
+      <h1>  <span> ALL CANDLES</span></h1>
+        <hr >
+       
+<!-- // filter -->
+<div id="fil_sort">
+            <div id="filter">
+                <h3>Filter By:</h3>
+          <div class="selectionBox" onclick="showCheckbox()">
+        <select >
+            <option>PRODUCT TYPE</option>
+        </select>
+        <hr>
+    <div class="overSelect"></div>
+</div>
+<div id="checkboxes">
+    <label for=""><input type="checkbox">Bar Soap</label>
+    <label for=""><input type="checkbox">Body Cream</label>
+    <label for=""><input type="checkbox">Bath Soak</label>
+</div>
+    </div>
+    <div id="sort" >
+        <select onclick="sortlowtohigh()" >
+            <option value="sort by" >SORT BY</option>
+         <div >   <option  >Low to High</option></div>
+            <option value="htl">High to Low</option>
+        </select>
+        <hr>
+    </div>
+
+</div>
+
+    <!-- Product Container -->
+    <div id="body_pro"></div>
+   </div>
+    
+</body>
+</html>
+<script src="./script/candles.js"></script>
