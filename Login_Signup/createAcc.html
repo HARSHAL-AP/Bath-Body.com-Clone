@@ -23,31 +23,37 @@
                 <p><span>*</span> Required</p>
             </div>
             <div class="CAcontent">
-                <p><span>*</span>First Name</p>
-                <input type="text" id="CAname">
+                <form onsubmit="createAcc(event)" id="form">
+                    <p><span>*</span>First Name</p>
+                    <input type="text" id="CAname">
 
-                <p><span>*</span>Last Name</p>
-                <input type="text" id="CAlast_name">
+                    <p><span>*</span>Last Name</p>
+                    <input type="text" id="CAlast_name">
 
-                <p><span>*</span>Email</p>
-                <input type="text" id="CAemail">
+                    <p><span>*</span>Email</p>
+                    <input type="text" id="CAemail">
 
-                <p><span>*</span>Confirm Email</p>
-                <input type="text" id="CAconform_mail">
+                    <p><span>*</span>Confirm Email</p>
+                    <input type="text" id="CAconform_mail">
 
-                <p><span>*</span>ZIP/Postal Code</p>
-                <input type="number" id="CAzipcode">
+                    <p><span>*</span>ZIP/Postal Code</p>
+                    <input type="number" id="CAzipcode">
 
-                <p><span>*</span>Phone</p>
-                <input type="number">
-                <p>We'll use this to look up your Rewards account in stores.</p>
+                    <p><span>*</span>Phone</p>
+                    <input type="number" id="PHnumber">
+                    <p>We'll use this to look up your Rewards account in stores.</p>
 
-                <p><span>*</span>Password</p>
-                <input type="password" id="CApass">
-            </div>
-            <div class="ca_bottom">
-                <p>Privacy Policy</p>
-                <button id="CAbtn"> CREATE ACCOUNT</button>
+                    <p><span>*</span>Password</p>
+                    <input type="password" id="CApass">
+
+                    <div class="ca_bottom">
+                        <a href="https://www.bathandbodyworks.com/customer-care/privacy-and-security.html">
+                            <p>Privacy Policy</p>
+                        </a>
+                        <!-- <button id="signup" type="submit"> CREATE ACCOUNT</button> -->
+                        <input type="submit" value="CREATE ACCOUNT" id="sign_up">
+                    </div>
+                </form>
             </div>
             <div class="caQue">
                 <p>Questions?</p>
@@ -56,6 +62,7 @@
         </div>
 
     </div>
+    <script src="createAcc.js"></script>
 </body>
 
 </html>

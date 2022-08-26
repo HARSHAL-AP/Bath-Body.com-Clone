@@ -30,18 +30,60 @@ span{
 }
 .CAcontent{
     margin: auto;
-    border: 1px solid rgb(11, 151, 58);
-    width: 50%;
+    text-align: center;
+    /* border: 1px solid rgb(11, 151, 58); */
+    width: 30%;
     /* text-align: center; */
 }
-.CAcontent>p{
+.CAcontent>form>p{
     text-align: left;
-    margin-top: 10px;
+    margin-top: 20px;
+    color: gray;
 }
-.CAcontent>input{
+.CAcontent>form>input{
     margin: auto;
     /* text-align: right; */
-    width: 300px;
+    width: 350px;
     height: 30px;
     margin-top: 5px;
+    color: gray;
 }
+.ca_bottom{
+    text-align: center;
+    margin-top: 40px;
+}
+.ca_bottom>p{
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ca_bottom>button{
+    margin-top: 18px;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(49, 48, 48);
+    border: rgb(49, 48, 48);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: .3s;
+}
+.ca_bottom>button:hover{
+    background-color: rgb(228, 226, 226);
+    color: black;
+}
+.caQue{
+    text-align: center;
+    margin-top: 25px;
+}
+a{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.caQue>p{
+    color: gray;
+    margin-bottom: 10px;
+}
+
