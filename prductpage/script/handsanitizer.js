@@ -256,9 +256,9 @@ function displayProducts(productData){
         let productID = document.createElement("h4");
         productID.innerText = element.productID;
 
-        let price = document.createElement("h3");
+        let price = document.createElement("p");
         price.innerText = element.price;
-        
+     
 
         let addtocart = document.createElement("button");
         addtocart.innerText = "Add To Bag";

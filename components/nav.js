@@ -33,7 +33,7 @@ function navbody(){
         <span class="material-symbols-outlined"> account_circle </span>
       </button>
       <div id="acountdiv">
-        <button> <a href="">Sign IN or Sign Up</a></button>
+        <button> <a href="./Login_Signup/signupLogin.html">Sign IN or Sign Up</a></button>
        
         <p>Order Tracking</p>
         <p>My Auto Refresh</p>
@@ -48,7 +48,7 @@ function navbody(){
     <div id="producticonbox">
       <button class="triger"><a href="">TOP PFFER</a></button>
 
-      <button class="triger"><a href="">BODY CARE</a></button>
+      <button class="triger"><a href="./fw18_0832/body.html">BODY CARE</a></button>
       <div class="modal">
         <div class="bodymod">
           <div>
@@ -128,7 +128,7 @@ function navbody(){
           <p>3/$2 Room Sprey</p></div> 
         </div>
         </div>  </div>
-      <button class="triger"><a href="">HAND SOAPS & SANITIZERS</a></button>
+      <button class="triger"><a href="./prductpage/handsanitizer.html">HAND SOAPS & SANITIZERS</a></button>
       <div class="modal"><div class="bodymod">
         <div>
           <div class="modamms">
