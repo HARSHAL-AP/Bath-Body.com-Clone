@@ -98,11 +98,19 @@ let append= (data)=>{
         let br1= document.createElement('br')
 
         image.src= el.image;
+        image.onclick=()=>{
+            console.log(el)
+           localStorage.setItem('pro_detail',JSON.stringify(el))
+       window.location.href =  "./details.html"
+       }
+        name.onclick=()=>{
+            console.log(el)
+           localStorage.setItem('pro_detail',JSON.stringify(el))
+       window.location.href =  "./details.html"
+       }
         badge.innerText= el.badge;
-        badge.style.color='#005699'
-        badge.style.fontSize='14px'
-        badge.style.fontWeight='Bold'
-        badge.style.fontStyle='Italic'
+        badge.setAttribute("class", "badge")
+    
         name.innerText= el.name;
         type.innerText=el.type;
         price.innerText=el.price;
@@ -121,8 +129,7 @@ append(data);
  // sorting function 
 
  let sortlowtohigh=()=>{
-     data[0]
-   
+   let data= JSON.parse(localStorage.getItem('body_products'))
         data.sort(function(a,b){
             return (a.price-b.price);
         })

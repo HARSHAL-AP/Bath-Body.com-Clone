@@ -1,0 +1,57 @@
+#box{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box p{
+    font-size: larger;
+    font-weight: bold;  
+}
+#image{
+    width: 40%;
+    /* height: 200px; */
+}
+#image img{
+    width: 80%;
+    margin-top: 20px;
+    margin-right: 20px;
+  /* height: 80%; */
+
+}
+h3{
+    color: red;
+}
+#details{
+    width: 60%;
+}
+.add{
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0px;
+    font-size: 10px;
+}
+#details button{
+    border: 0px;
+    padding: 10px;
+    margin-right: 2px;
+}
+.ship,.pick{
+    display: flex;
+}
+.pick{
+    color: #005699
+}
+#line hr{
+    width: 50%;
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+hr{
+height: 1px;
+    border: none;
+    background-color: #e7e3e3;
+}
