@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="./style/body.css">
 </head>
 <body>
+   <div id="product_container">
     <div id="up_product_box">
-        <span>All Body Care</span>
-        <hr>
+      <h1>  <span>All Body Care</span></h1>
+        <hr >
         <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0817b914/images/Spring2022/tbctier_sp3_gh.jpg?yocs=s_" alt="Favorite"/>
-        <div id="button">
-            <button>ALL BODY CARE</button>
-            <button>FRAGRANCE</button>
-            <button>BATH & SHOWER</button>
-            <button>MOISTURIZERS</button>
-            <button>AROMATHERAPY</button>
-            <button>MEN'S</button>
+        <div id="buttons">
+            <button><a href="./body.html">ALL BODY CARE</a></button>
+            <button><a href="">FRAGRANCE</a></button>
+            <button><a href="">BATH & SHOWER</a></button>
+            <button><a href="">MOISTURIZERS</a></button>
+            <button><a href="">AROMATHERAPY</a></button><br>
+            <button><a href="">MEN'S</a></button>
         </div>
         <div>
 <!-- // filter -->
-
+<div id="fil_sort">
             <div id="filter">
+                <h3>Filter By:</h3>
           <div class="selectionBox" onclick="showCheckbox()">
         <select >
             <option>PRODUCT TYPE</option>
         </select>
+        <hr>
     <div class="overSelect"></div>
 </div>
 <div id="checkboxes">
@@ -36,9 +39,20 @@
     <label for=""><input type="checkbox">Bath Soak</label>
 </div>
     </div>
+    <div id="sort" >
+        <select onclick="sortlowtohigh()" >
+            <option value="sort by" >SORT BY</option>
+         <div >   <option  >Low to High</option></div>
+            <option value="htl">High to Low</option>
+        </select>
+        <hr>
+    </div>
+
+</div>
 
     <!-- Product Container -->
     <div id="body_pro"></div>
+   </div>
     
 </body>
 </html>
