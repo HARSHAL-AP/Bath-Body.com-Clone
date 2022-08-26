@@ -5,11 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/handsanitizer.css">
-    <title>Document</title>
+
+    <title>Soap and Hand Sanitizer</title>
 </head>
 <body>
+    <div id="filter-part">
+        <select id="filter">
+            <option value = "All">All Product</option>
+            <option value="Casual">Casual</option>
+            <option value="travel">Travel</option>
+            <option value="formal">Formal</option>
+            <option value="glycerine">Glycerine</option>
+            <option value="fancy">Fancy</option>
+        </select>
+
+    </div>
+
+    <title>Document</title>
+  <link rel="stylesheet" href="/style/navbar.css">
+    <!--Google Font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nanum+Gothic&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    
+    <!---Font Awsem Scripts-->
+    <script
+      src="https://kit.fontawesome.com/8f1241067b.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div id="headadd">
+        <div>
+          <p>FREE SHIPING ABOVE Rs.2,499</p>
+        </div>
+      </div>
+      <div id="navbar">
+      
+    </div>
+    <div id="navadverti">
+        <p>My Bath & Body Works Rewards is now available nationwide!</p>
+        <a href="">Details.</a>
+      </div>
+
     <div id="main">
+    
         <div id="main1">
+            <h4>HOME / HAND SANITIZER</h4>
+            <div>
+                <h3>TOP OFFER</h3>
+                <p>5/$25 Hand Soaps</p>
+                <p>$8 Hand Sanitizer 5-Packs</p>
+                <p>3/$15 Hand Sanitizer Sprays</p>
+            </div>
+            <div>
+                <h3>HAND SOAPS</h3>
+                <p>All Hand Soaps</p>
+                <p>Foaming Soaps</p>
+                <p>Gel Soaps</p>
+                <p>Soap Holders</p>
+            </div>
+            <div>
+                <h3>HAND SANITIZERS</h3>
+                <p>All Hand Sanitizers</p>
+                <p>PocketBac Hand Sanitizers</p>
+                <p>Hand Sanitizer Sprays</p>
+                <p>Full-Size Sanitizers</p>
+                <p>Hand Sanitizer Holders</p>
+            </div>
+            
 
         </div>
         <div id="main2">
@@ -17,9 +89,20 @@
         </div>
 
     </div>
-    
+    <div id="fotter">
+      
+    </div>
 </body>
 </html>
 <script src="../prductpage/script/handsanitizer.js">
 
+</script>
+<script type="module">
+import {navbody,foot} from "/components/nav.js"
+
+let nav=document.getElementById("navbar")
+nav.innerHTML=navbody()
+
+let fott=document.getElementById("fotter")
+fott.innerHTML=foot()
 </script>
