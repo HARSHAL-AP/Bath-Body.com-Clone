@@ -64,15 +64,15 @@
                 <h3>Filter By:</h3>
           <div class="selectionBox" onclick="showCheckbox()">
         <select >
-            <option>PRODUCT TYPE</option>
+            <option class="overSelect">PRODUCT NAME</option>
         </select>
         <hr>
-    <div class="overSelect"></div>
+    <div ></div>
 </div>
-<div id="checkboxes">
-    <label for=""><input type="checkbox">Bar Soap</label>
-    <label for=""><input type="checkbox">Body Cream</label>
-    <label for=""><input type="checkbox">Bath Soak</label>
+<div id="checkboxes" >
+    <label for=""><input type="checkbox" id="ch"  onclick="filter()" value="Midnight Amber Glow" >Midnight Amber Glow</label>
+    <label for=""><input type="checkbox" id="ch1" onclick="filter()" value="Sweater Weather">Sweater Weather</label>
+    <label for=""><input type="checkbox">Coffee & Whiskey</label>
 </div>
     </div>
     <div id="sort" >

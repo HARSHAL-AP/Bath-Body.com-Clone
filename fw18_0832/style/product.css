@@ -92,26 +92,33 @@ text-align: center;
     height: 40px;
     background-color: #f2f2f2;
     font-size: 13px;
-    display: flex;
+    /* display: flex; */
     font-family: Arial,sans-serif;
     padding: 10px;
-   align-items: center;
-   justify-content: space-around;
+   /* align-items: center; */
+   /* justify-content: space-around; */
 }
 .selectBox{
     position: relative;
+    /* display: none; */
 }
 .selectBox select{
     width: 100%;
     font-weight: bold;
 }
 .overSelect{
-    /* position: absolute; */
-    left:0; right: 0; top: 0; bottom: 0;
+    position: absolute;
+    width: 125px;
+    display: none;
+    border: 0px;
+    
+    /* left:0; right: 0; top: 0; bottom: 0; */
 }
 
 #checkboxes{
-    /* display: none; */
+    display: none;
+    position: relative;
+    background-color: #ffffff;
     /* border: 1px #dadada solid; */
     width: 125px
 }

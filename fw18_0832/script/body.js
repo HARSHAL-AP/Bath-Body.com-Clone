@@ -343,29 +343,28 @@ let append = (data) => {
 
 append(data);
 
-// sorting function
-
-let sortlowtohigh = () => {
-  data[0];
-
-
 
  // sorting function 
 
  let sortlowtohigh=()=>{
    let data= JSON.parse(localStorage.getItem('body_products'))
-        data.sort(function(a,b){
-            return (a.price-b.price);
-        })
-    append(data)
-    console.log(data)
+      
+        el.sort(function(a,b){
+          return (a.price-b.price);
+      })
+  append(data)
+  console.log(data)
+    
 
 }
 
-  data.sort(function (a, b) {
-    return a.price - b.price;
-  });
-  append(data);
-  console.log(data);
-};
 
+
+
+// filtering
+
+// let checkboxes= document.getElementById('ch').value;
+// let ch1= document.getElementById('ch1').value;
+// let filter= ()=>{
+//   console.log(checkboxes,ch1)
+// }
