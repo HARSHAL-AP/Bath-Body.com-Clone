@@ -86,32 +86,66 @@
         <a>Mix & Match: 5/$30</a>
       </div>
     </div>
-     
+
     <!--shoping cart starts heare -->
-    <div id="shoping"></div>
+    <div id="shoping">
+      <div id="shopibbagmainbody">
+        <div id="pymentnfo">
+          <p>ITEMS IN SHOPPING BAG</p>
+          <div>
+            <button class="paypal">
+              <img
+                src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
+                alt=""
+              /></button
+            ><button class="checkoutbtn">
+              <span class="material-symbols-outlined"> lock </span>CHECKOUT
+            </button>
+          </div>
+        </div>
+        <div>
+          <div id="pickupstroadd">
+            <p>
+              Need it ASAP? Choose Pick Up In Store, and we'll typically have it
+              ready for pickup within 4 hours.
+            </p>
+          </div>
+          <div id="bagitemheadings">
+            <div id="bagtitle1">
+              <p>ITEM</p>
+              <p>ITEM PRICE</p>
+            </div>
+            <div id="bagtitle2">
+              <p>QTY</p>
+              <p>TOTAL PRICE</p>
+            </div>
+          </div>
 
-
-
-
-
+          <div id="minbagproductdiv">
+               
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="fotter"></div>
   </body>
 </html>
+<script src="/bag/script/bag.js"></script>
 <script type="module">
-  import {navbody,foot} from "/components/nav.js"
-  
-  let nav=document.getElementById("navbar")
-  nav.innerHTML=navbody()
-  
-  let fott=document.getElementById("fotter")
-  fott.innerHTML=foot()
+  import { navbody, foot } from "/components/nav.js";
 
-  let homapage=document.getElementById("mainlogo")
-homapage.addEventListener("click",function(){
-  gotohome()
-})
-function gotohome(){
-  window.location.href="/index.html"
-}
-  </script>
+  let nav = document.getElementById("navbar");
+  nav.innerHTML = navbody();
+
+  let fott = document.getElementById("fotter");
+  fott.innerHTML = foot();
+
+  let homapage = document.getElementById("mainlogo");
+  homapage.addEventListener("click", function () {
+    gotohome();
+  });
+  function gotohome() {
+    window.location.href = "/index.html";
+  }
+</script>

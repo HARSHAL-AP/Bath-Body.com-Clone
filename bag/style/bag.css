@@ -50,3 +50,253 @@
   margin-top: 50px;
   background-color: rgb(255, 255, 255);
 }
+#shoping{
+  height: auto;
+  width: 70%;
+
+  margin: auto;
+  margin-top: 50px;
+
+}
+#emptybag{
+  height: auto;
+  width: 100%;
+
+text-align: center;
+}
+#emptybag>p{
+  font-size: 24px;
+}
+#emptybag>hr{
+  height: 2px;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: black;
+  border: 0;
+}
+#emptybag>button{
+  margin-top: 20px;
+  height: 35px;
+  width: 150px;
+  background-color: black;
+}
+#emptybag>button>a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 12px;
+}
+#shopibbagmainbody{
+  height: auto;
+  width: 90%;
+  margin: auto;
+  
+}
+#pymentnfo{
+  height: 40px;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#pymentnfo>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.paypal{
+  height: 35px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0ch;
+  background-color:yellow ;
+}
+.paypal>img{
+  width: 70%;
+  height: auto;
+}
+.checkoutbtn{
+  height: 35px;
+  width: 125px;
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 0ch;
+  background-color: green;
+  color: aliceblue;
+  font-weight: bolder;
+}
+#pickupstroadd{
+  margin-top: 20px;
+  height: 30px;
+  width: 100%;
+  background-color: rgba(127, 185, 255, 0.42);
+  display: flex;
+  align-items: center;
+}
+#pickupstroadd>p{
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: bolder;
+  color:  #066599;;
+}
+#bagitemheadings{
+  height: 30px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly ;
+  background-color: #b6b6b698;
+}
+#bagtitle1,#bagtitle2{
+  height: auto;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bagtitle1>p,#bagtitle2>p{
+font-size: 14px;
+font-weight: bolder;
+}
+#minbagproductdiv{
+  height: auto;
+  width: 100%;
+  display: block;
+
+}
+#minbagproductdiv>div{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  
+  border-bottom: 1px solid black;
+}
+.cart_prodimg{
+  height: 100%;
+  width: 50%;
+  display: flex;
+ 
+}
+.myinagi112{
+  height: 100%;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+text-align:center ;
+
+}
+.myinagi112>img{
+  width:70%;
+  height:60%;
+
+}
+.mydata15554{
+  height: 100%;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.namedata12{
+  height: 100%;
+  width: 70%;
+ 
+}
+.pricedata12{
+  height: 100%;
+  width:30%;
+
+}
+.cart_proditempriceinfo{
+  height: 100%;
+  width: 50%;
+  
+}
+.mypordesc8765{
+  height: 40px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+ 
+}
+.mypordesc8765>div{
+  height: 100%;
+  width: 50%;
+  
+}
+.qtyjiop{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ 
+}
+.qtyjiop>button{
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  border: 0;
+}
+.qtyjiop>input{
+  height: 30px;
+  width: 30px;
+  background-color: rgb(206, 206, 206);
+  text-align: center;
+  border: 0;
+}
+.alltotalamount{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+ 
+}
+.namedata12>h4{
+text-transform: uppercase;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color:black;
+  margin-top: 20px;
+}
+.namedata12>h5{
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.namedata12>p{
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: red;
+}
+.namedata12>h6{
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color:black;
+  margin-top: 80px;
+  text-decoration: underline;
+}
+.pricedata12>h2{
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color:rgb(255, 0, 0);
+  margin-top: 20px;
+
+}
+.clearrpoductfromdata{
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  margin-left: 40px;
+  border: 0;
+}
