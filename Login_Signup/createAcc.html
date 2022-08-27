@@ -60,22 +60,22 @@
             <div class="CAcontent">
                 <form onsubmit="createAcc(event)" id="form">
                     <p><span>*</span>First Name</p>
-                    <input type="text" id="CAname">
+                    <input type="text" id="CAname" required>
 
                     <p><span>*</span>Last Name</p>
-                    <input type="text" id="CAlast_name">
+                    <input type="text" id="CAlast_name" required>
 
                     <p><span>*</span>Email</p>
                     <input type="text" id="CAemail">
 
                     <p><span>*</span>Confirm Email</p>
-                    <input type="text" id="CAconform_mail">
+                    <input type="text" id="CAconform_mail" required>
 
                     <p><span>*</span>ZIP/Postal Code</p>
-                    <input type="number" id="CAzipcode">
+                    <input type="number" id="CAzipcode" required>
 
                     <p><span>*</span>Phone</p>
-                    <input type="number" id="PHnumber">
+                    <input type="number" id="PHnumber" required>
                     <p>We'll use this to look up your Rewards account in stores.</p>
 
                     <p><span>*</span>Password</p>
@@ -86,7 +86,9 @@
                             <p>Privacy Policy</p>
                         </a>
                         <!-- <button id="signup" type="submit"> CREATE ACCOUNT</button> -->
-                        <input type="submit" value="CREATE ACCOUNT" id="sign_up">
+                        <!-- <input type="submit" value="CREATE ACCOUNT" id="sign_up"> -->
+
+                        <button onclick="main()" >CREATE ACCOUNT</button>
                     </div>
                 </form>
             </div>
