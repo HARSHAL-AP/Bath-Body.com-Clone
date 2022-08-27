@@ -252,6 +252,7 @@
   #fotter{
     height: auto;
     width: 100%;
+    margin-top: 100px;
   }
   #fhr{
     height: 2px;
