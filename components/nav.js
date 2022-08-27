@@ -48,7 +48,7 @@ function navbody(){
     <div id="producticonbox">
       <button class="triger"><a href="">TOP PFFER</a></button>
 
-      <button class="triger"><a href="./fw18_0832/body.html">BODY CARE</a></button>
+      <button class="triger"><a href="/fw18_0832/body.html">BODY CARE</a></button>
       <div class="modal">
         <div class="bodymod">
           <div>
@@ -78,7 +78,7 @@ function navbody(){
           </div>
         </div>  
         </div>
-      <button class="triger"><a href="">CANDELS</a></button>
+      <button class="triger"><a href="/fw18_0832/candles.html">CANDELS</a></button>
       <div class="modal">
         <div class="bodymod">
           <div>
@@ -128,7 +128,7 @@ function navbody(){
           <p>3/$2 Room Sprey</p></div> 
         </div>
         </div>  </div>
-      <button class="triger"><a href="./prductpage/handsanitizer.html">HAND SOAPS & SANITIZERS</a></button>
+      <button class="triger"><a href="/prductpage/handsanitizer.html">HAND SOAPS & SANITIZERS</a></button>
       <div class="modal"><div class="bodymod">
         <div>
           <div class="modamms">
@@ -153,7 +153,7 @@ function navbody(){
           <p>3/$2 HAND SANITIZERS</p></div> 
         </div>
         </div>  </div>
-      <button class="triger"><a href="">MEN'S</a></button>
+      <button class="triger"><a href="/mensproducts/mens.html">MEN'S</a></button>
       <div class="modal"><div class="bodymod">
         <div>
           <div class="modamms">

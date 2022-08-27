@@ -99,11 +99,19 @@
   </body>
 </html>
 <script type="module">
-  import { navbody, foot } from "/components/nav.js";
+  import {navbody,foot} from "/components/nav.js"
+  
+  let nav=document.getElementById("navbar")
+  nav.innerHTML=navbody()
+  
+  let fott=document.getElementById("fotter")
+  fott.innerHTML=foot()
 
-  let nav = document.getElementById("navbar");
-  nav.innerHTML = navbody();
-
-  let fott = document.getElementById("fotter");
-  fott.innerHTML = foot();
-</script>
+  let homapage=document.getElementById("mainlogo")
+homapage.addEventListener("click",function(){
+  gotohome()
+})
+function gotohome(){
+  window.location.href="/index.html"
+}
+  </script>
