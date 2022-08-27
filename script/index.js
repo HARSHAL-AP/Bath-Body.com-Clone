@@ -12,3 +12,11 @@ fott.innerHTML=foot()
  function gotohome(){
     window.location.href="/index.html"
  }
+
+ let gotocart=document.getElementById('gotocart')
+gotocart.addEventListener("click",function(){
+  gotobag()
+})
+function gotobag(){
+  window.location.href="/bag/bag.html"
+}

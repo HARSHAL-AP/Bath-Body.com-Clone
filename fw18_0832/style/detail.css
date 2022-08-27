@@ -2,6 +2,7 @@
     display: flex;
     width: 50%;
     margin: auto;
+    margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #box p{
@@ -9,11 +10,16 @@
     font-weight: bold;  
 }
 #image{
-    width: 40%;
+    
+   width: auto;
+    height: auto;;
+    align-items: center;
+    
     /* height: 200px; */
 }
 #image img{
-    width: 80%;
+    width:auto;
+    height: 200px;
     margin-top: 20px;
     margin-right: 20px;
   /* height: 80%; */

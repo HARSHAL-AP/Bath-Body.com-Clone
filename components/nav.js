@@ -39,7 +39,7 @@ function navbody(){
         <p>My Auto Refresh</p>
         <p>My LOveIt List</p>
       </div>
-      <button class="acicon">
+      <button class="acicon" id="gotocart">
         <span class="material-symbols-outlined"> work </span>
       </button>
     </div>
@@ -104,7 +104,7 @@ function navbody(){
           </div>
         </div>  
         </div>
-      <button class="triger"><a href="">HOME FRAGRANCE</a></button>
+      <button class="triger"><a href="/mensproducts/mens.html">HOME FRAGRANCE</a></button>
       <div class="modal"><div class="bodymod">
         <div>
           <div class="modamms">

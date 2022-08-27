@@ -9,17 +9,7 @@
     <title>Soap and Hand Sanitizer</title>
 </head>
 <body>
-    <div id="filter-part">
-        <select id="filter">
-            <option value = "All">All Product</option>
-            <option value="Casual">Casual</option>
-            <option value="travel">Travel</option>
-            <option value="formal">Formal</option>
-            <option value="glycerine">Glycerine</option>
-            <option value="fancy">Fancy</option>
-        </select>
-
-    </div>
+   
 
     <title>Document</title>
   <link rel="stylesheet" href="/style/navbar.css">
@@ -55,7 +45,17 @@
         <p>My Bath & Body Works Rewards is now available nationwide!</p>
         <a href="">Details.</a>
       </div>
+    <div id="myfilters"> <div id="filter-part">
+      <select id="filter">
+          <option value = "All">All Product</option>
+          <option value="Casual">Casual</option>
+          <option value="travel">Travel</option>
+          <option value="formal">Formal</option>
+          <option value="glycerine">Glycerine</option>
+          <option value="fancy">Fancy</option>
+      </select>
 
+  </div></div>
     <div id="main">
     
         <div id="main1">
@@ -84,6 +84,7 @@
             
 
         </div>
+        
         <div id="main2">
 
         </div>
@@ -113,4 +114,13 @@ homapage.addEventListener("click",function(){
 function gotohome(){
   window.location.href="/index.html"
 }
+
+let gotocart=document.getElementById('gotocart')
+gotocart.addEventListener("click",function(){
+  gotobag()
+})
+function gotobag(){
+  window.location.href="/bag/bag.html"
+}
+
   </script>

@@ -73,7 +73,9 @@ sum.onclick=()=>{
 sum.innerText="+";
 add.innerText="ADD TO BAG";
 add.setAttribute("class", "add")
-
+add.addEventListener("click",function(){
+    addtoaggg(pro_detail)
+})
 bagdiv.append(sub,total,sum,add)
 
 // next part4
@@ -127,3 +129,15 @@ details.append(pro_ex,receiveDiv,bagdiv,hr2, hd1div)
 }
 
 append()
+
+
+
+
+function addtoaggg(el){
+    let arr=JSON.parse(localStorage.getItem("mycart"))||[]
+    
+    arr.push(el)
+    
+    localStorage.setItem("mycart",JSON.stringify(arr))
+    alert("Your Product Added To bag Sucsessfully..")
+    }

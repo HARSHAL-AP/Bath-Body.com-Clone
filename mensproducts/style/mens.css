@@ -135,3 +135,9 @@ width: 20%;
     color: #fff;
     margin-top: 20px;
  }
+ #mainproductbody>div>button:hover{
+   background-color: rgb(144, 144, 144);
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+   border: 0;
+ }

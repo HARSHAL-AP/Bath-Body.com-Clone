@@ -332,7 +332,9 @@ let append = (data) => {
         type.innerText=el.type;
         price.innerText=el.price;
         add_button.innerText="ADD TO BAG"
-
+        add_button.addEventListener("click",function(){
+          addtoaggg(el)
+         })
         div.append(image,br,badge,name,type,price,br1,add_button)
         body_pro.append(div)
 
@@ -360,6 +362,14 @@ append(data);
 
 
 
+function addtoaggg(el){
+  let arr=JSON.parse(localStorage.getItem("mycart"))||[]
+  
+  arr.push(el)
+  
+  localStorage.setItem("mycart",JSON.stringify(arr))
+  alert("Your Product Added To bag Sucsessfully..")
+  }
 
 // filtering
 

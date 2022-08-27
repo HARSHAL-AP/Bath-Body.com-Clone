@@ -279,6 +279,11 @@ let apenallprod=(data)=>{
     
     let img=document.createElement('img')
    img.src=el.image
+   img.onclick=()=>{
+    console.log(el)
+   localStorage.setItem('pro_detail',JSON.stringify(el))
+   window.location.href =  "/fw18_0832/details.html"
+    }
     let typ=document.createElement('h4')
     typ.innerText=el.badge
     let titl=document.createElement('h3')
@@ -290,9 +295,22 @@ let apenallprod=(data)=>{
    price.innerText="$"+el.price
     let addto=document.createElement('button')
    addto.innerText="ADD TO BAG"
+   addto.addEventListener("click",function(){
+    addtoaggg(el)
+   })
     box.append(img,typ,titl,desc,price,addto)
     contener.append(box)
     })
 }
 
 apenallprod(productData)
+
+
+function addtoaggg(el){
+let arr=JSON.parse(localStorage.getItem("mycart"))||[]
+
+arr.push(el)
+
+localStorage.setItem("mycart",JSON.stringify(arr))
+alert("Your Product Added To bag Sucsessfully..")
+}

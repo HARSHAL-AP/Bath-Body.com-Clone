@@ -1,26 +1,60 @@
+function emptybag(){
+  let cart=JSON.parse(localStorage.getItem("mycart"))||[]
+  if(cart.length===0){
+    document.getElementById("shoping").innerHTML=`<div id="emptybag">
+    <p>Your Shopping Bag is Empty</p>
+    <hr>
+    <button><a href="/index.html">CONTINUE SHOPPING</a></button>
+</div>`
+}
+else{
+  document.getElementById("shoping").innerHTML=`<div id="shopibbagmainbody">
+  <div id="pymentnfo">
+    <p>ITEMS IN SHOPPING BAG</p>
+    <div>
+      <button class="paypal">
+        <img
+          src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
+          alt=""
+        /></button
+      ><button class="checkoutbtn">
+        <span class="material-symbols-outlined"> lock </span>CHECKOUT
+      </button>
+    </div>
+  </div>
+  <div>
+    <div id="pickupstroadd">
+      <p>
+        Need it ASAP? Choose Pick Up In Store, and we'll typically have it
+        ready for pickup within 4 hours.
+      </p>
+    </div>
+    <div id="bagitemheadings">
+      <div id="bagtitle1">
+        <p>ITEM</p>
+        <p>ITEM PRICE</p>
+      </div>
+      <div id="bagtitle2">
+        <p>QTY</p>
+        <p>TOTAL PRICE</p>
+      </div>
+    </div>
+
+    <div id="minbagproductdiv">
+         
+    </div>
+    
+  </div>
+</div>`
+}
+}
+emptybag()
 
 
 
-let cart=[{
-    image:
-      "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd6ef9cca/crop/026538274_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-    badge: "New Fragrance",
-    name: "Leather & Brandy",
-    type: "3-Wick Candle",
-    price: 16.5,
-    Rating: 7,
-  },
-  {
-    image:
-      "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2ca41ca6/crop/026495998_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-      badge: "New Fragrance",
-      name: "Coffee & Whiskey",
-      type: "3-in-1 Hair & Body Wash",
-      price: 13.5,
-    Rating: 8,
-  }]
 
-let apendacart=(data)=>{
+let apendacart=()=>{
+let data=JSON.parse(localStorage.getItem("mycart"))||[]
 let position=document.getElementById("minbagproductdiv")
 data.forEach((el,index)=>{
 
@@ -80,6 +114,9 @@ clearbtn.innerHTML=`<span class="material-symbols-outlined">
 close
 </span>`
 clearbtn.setAttribute("class","clearrpoductfromdata")
+clearbtn.addEventListener("click",function(){
+  removeproduct(el,index)
+})
 qty2.append(totalcost,clearbtn)
 
 
@@ -93,13 +130,24 @@ position.append(divv)
 
 
 }
-apendacart(cart)
+apendacart()
 
 
-if(cart.length===0){
-    document.getElementById("shoping").innerHTML=`<div id="emptybag">
-    <p>Your Shopping Bag is Empty</p>
-    <hr>
-    <button><a href="/index.html">CONTINUE SHOPPING</a></button>
-</div>`
+
+
+function  removeproduct(el,index){
+
+  let cart=JSON.parse(localStorage.getItem("mycart"))||[]
+
+  let newarr=cart.filter(function(el,i){
+      return i!==index
+      emptybag()
+      apendacart()
+  })
+  localStorage.setItem("mycart",JSON.stringify(newarr))
+  window.location.reload()
+
+
+
+
 }
