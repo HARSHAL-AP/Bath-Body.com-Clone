@@ -24,16 +24,14 @@
     <hr>
   <h3>Sign-up/login</h3>
   <img src="/imges/login.png"/>
-  
-    <hr>
+  <hr>
   <h3>product Pages</h3>
   <img src="/imges/Product page.png"/>
     <hr>
   <h3>product Pages</h3>
   <img src="/imges/Product page2.png"/>
     <hr>
-    //
-  <h3>Shopping Bag Page</h3>
+    <h3>Shopping Bag Page</h3>
   <img src="/imges/bag.png"/>
     <hr>
   <h3>Checkout Section</h3>
