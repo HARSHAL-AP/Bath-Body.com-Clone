@@ -300,3 +300,16 @@ text-transform: uppercase;
   margin-left: 40px;
   border: 0;
 }
+#totalpayment{
+  height: 40px;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: end;
+  background-color: #d8e8f1;
+}
+#totalpayment>p{
+  font-size: 14px ;
+  font-weight: bolder;
+  margin-right: 70px;
+}

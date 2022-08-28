@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="/checkout/Cart page/billing.css">
+ <link rel="stylesheet" href="/checkout/Cart page/inde.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link
+   href="https://fonts.googleapis.com/css2?family=Inter&family=Nanum+Gothic&family=Zen+Maru+Gothic&display=swap"
+   rel="stylesheet"
+ />
+
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+ />
+
+ <!---Font Awsem Scripts-->
+ <script
+   src="https://kit.fontawesome.com/8f1241067b.js"
+   crossorigin="anonymous"
+ ></script>
+ 
+</head>
+<body>
+    <div id="navbar">
+        <p>We're here to help! 1-800-756-5005 | 7 Days a Week 6AM–2AM EST</p>
+      </div>
+      <div id="logobar">
+        <img
+          id="gotohome"
+          src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2631ba1c/images/logo.png"
+          alt=""
+        />
+        <button id="gotobag">
+          <span class="material-symbols-outlined"> work </span>
+        </button>
+      </div>
+<div class="container">
+
+    <form >
+
+        <div class="row">
+
+        
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" id="cardno" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" id="date" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" id="year" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" id="cv" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+
+    
+        </div>
+
+        <input type="submit" id="onsubmitdata" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+
+<div id="fott">
+    <img
+      src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.217/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=s_"
+      alt=""
+    />
+    <p>FAQs Contact Us Shipping & Returns Store Locator</p>
+  </div>
+  <div id="footer">
+    <p class="footep">
+      Terms Of Use Privacy Policy Security Bug Report California Privacy
+      Rights Do Not Sell My Personal Information (California) Transparency in
+      Supply Chains Ad Preferences
+    </p>
+    <p class="footep">
+      © 2022 Bath & Body Works Direct, Inc. All Rights Reserved.
+    </p>
+  </div>
+</body>
+</html>
+
+<script>
+
+let onsubmitdata=document.getElementById("onsubmitdata")
+onsubmitdata.addEventListener("click",function(){
+    submitdata()
+})
+
+
+
+function submitdata(){
+event.preventDefault()
+    alert("Payment Sucsessfull...")
+    alert("Your Order is Confirm...")
+    gotoh()
+    
+
+
+
+
+}
+
+let home=document.getElementById("gotohome")
+home.addEventListener("click",function(){
+    gotoh()
+})
+function gotoh(){
+    window.location.href="/index.html"
+}
+
+let bag=document.getElementById("gotobag")
+bag.addEventListener("click",function(){
+    gotobag()
+})
+function gotobag(){
+    window.location.href="/bag/bag.html"
+}
+
+
+
+</script>
