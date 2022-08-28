@@ -49,4 +49,11 @@
       <li>Github Link: https://https://github.com/HARSHAL-AP</li>
       <li>Email: apsundeharshal129@gmail.com</li>
       <li>LinkedIn: https://www.linkedin.com/in/harshal-apsunde-42b40b236</li></ul>
+
+    <h4>Juhi Diwase</h4>
+    <ul><li>Github: juhidiwase99</li>
+      <li>Github Link: https://github.com/juhidiwase99</li>
+      <li>Email:jdiwase2017@gmail.com</li>
+      <li>LinkedIn: https://www.linkedin.com/feed/?trk=msn-top-in</li></ul>  
+      
   </html>
