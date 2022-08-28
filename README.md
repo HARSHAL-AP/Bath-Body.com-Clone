@@ -1,6 +1,6 @@
 <html>
   <h1>Bath&BodyWorks  Website Clone</h1>
-  <h3>In the Masai School Construct week project ,We have cloned the Bath&BodyWorks.com website https://symphonious-genie-b43ee7.netlify.app  .Bath&BodyWorks is a shopping website that has Products Loke Soaps, Room Freshners,Candals ,Body Spress and so more For all type of coustomer.
+  <h3>In the Masai School Construct week project ,We have cloned the Bath&BodyWorks.com website https://guileless-longma-a0b1d8.netlify.app/index.html  .Bath&BodyWorks is a shopping website that has Products Loke Soaps, Room Freshners,Candals ,Body Spress and so more For all type of coustomer.
     <br>  We built it in 5days with the team of 5 collaborators.</p>
    <p> Some features of our Projects-</p>
   <p> 1)A secure developers panel for Controlling Website,watching details and user's feedbacks for website.
