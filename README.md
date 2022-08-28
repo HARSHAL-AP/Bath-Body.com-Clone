@@ -38,8 +38,10 @@
     <hr>
   <h3>Checkout Section</h3>
   <img src="/imges/checkoutpage.png"/>  
-
-    <hr>
+   <hr>
+   <h3>Payment Page</h3>
+<img src="/imges/Paymentpage.png"/>  
+    
   <h2>Team Members and Contributors</h2>
   
 
