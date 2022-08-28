@@ -6,6 +6,8 @@ function emptybag(){
     <hr>
     <button><a href="/index.html">CONTINUE SHOPPING</a></button>
 </div>`
+
+document.getElementById("totalpayment").style.display="none"
 }
 else{
   document.getElementById("shoping").innerHTML=`<div id="shopibbagmainbody">
@@ -17,7 +19,7 @@ else{
           src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
           alt=""
         /></button
-      ><button class="checkoutbtn">
+      ><button class="checkoutbtn" id="protocheckout">
         <span class="material-symbols-outlined"> lock </span>CHECKOUT
       </button>
     </div>
@@ -46,6 +48,7 @@ else{
     
   </div>
 </div>`
+document.getElementById("totalpayment").style.display="block"
 }
 }
 emptybag()
@@ -55,6 +58,12 @@ emptybag()
 
 let apendacart=()=>{
 let data=JSON.parse(localStorage.getItem("mycart"))||[]
+let totalp=document.getElementById("allttol")
+let s=0
+for(let i=0;i<data.length;i++){
+s+=+(data[i].price)
+}
+totalp.innerText="Total :"+"$ "+s
 let position=document.getElementById("minbagproductdiv")
 data.forEach((el,index)=>{
 
@@ -118,17 +127,11 @@ clearbtn.addEventListener("click",function(){
   removeproduct(el,index)
 })
 qty2.append(totalcost,clearbtn)
-
-
 decin.append(qty,qty2)
 descdiv.append(decin)
 divv.append(imgdiv,descdiv)
 position.append(divv)
 })
-
-
-
-
 }
 apendacart()
 
@@ -146,8 +149,11 @@ function  removeproduct(el,index){
   })
   localStorage.setItem("mycart",JSON.stringify(newarr))
   window.location.reload()
-
-
-
-
 }
+
+
+
+let protocheckout=document.getElementById("protocheckout")
+protocheckout.addEventListener("click",function(){
+  window.location.href="/checkout/Cart page/addres.html"
+})
